@@ -1,5 +1,3 @@
-const assert = require('assert');
-
 const test = 'i am learning TDD';
 
 const capitalizeFirstLetters = (test) => {
@@ -15,12 +13,4 @@ const capitalizeFirstLetters = (test) => {
   }
 };
 
-assert.strictEqual(typeof capitalizeFirstLetters, 'function');
-assert.strictEqual(capitalizeFirstLetters(''), '');
-assert.strictEqual(capitalizeFirstLetters('test'), 'Test');
-assert.strictEqual(
-  capitalizeFirstLetters('ceci est un test'),
-  'Ceci Est Un Test'
-);
-
-console.log(capitalizeFirstLetters(test));
+module.exports = capitalizeFirstLetters;
